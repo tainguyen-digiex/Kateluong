@@ -1,17 +1,20 @@
+import styles from "../../page/Home/styles.module.css";
 import React from "react";
-import styles from "./styles.module.css"
 import {Link} from "react-router-dom";
 
-function Home() {
+function Header() {
     return (
-        <div className="w-full h-screen text-white flex flex-col justify-center items-center  animate__animated animate__fadeIn">
+        <div className='text-white flex flex-col justify-center items-center'>
             <h1 className={styles.text}>
                 My name's ...
             </h1>
-            <h2 className={styles.text1}>
-                PORTFOLIO
-            </h2>
-            <div className="grid grid-cols-5 pt-5">
+            {/*<h2 className={styles.text1}>*/}
+            {/*    Profile*/}
+            {/*</h2>*/}
+            <div className="grid grid-cols-6 pt-5">
+                <Link to="/" className={`${styles.text2} w-[120px] flex justify-center items-center`}>
+                    HOME
+                </Link>
                 <Link to="/" className={`${styles.text2} w-[120px] flex justify-center items-center`}>
                     ABOUT ME
                 </Link>
@@ -32,5 +35,4 @@ function Home() {
     )
 }
 
-export default Home
-
+export default Header
