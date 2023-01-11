@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import Home from "./page/Home";
-import {BrowserRouter, Outlet, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Outlet, Route, Routes, useNavigate} from "react-router-dom";
 import Footer from "./compoment/Footer";
 import Contact from "./page/Contact";
+import Header from "./compoment/Header";
 
 function App() {
     return (

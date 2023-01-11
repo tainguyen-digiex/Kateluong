@@ -5,13 +5,12 @@ import image_meo from "../../assets/image/meo.png"
 function Contact() {
     return (
         <div className="animate__animated animate__fadeInDown overflow-x-hidden h-auto">
-
             <Header/>
-            <div className="m-[5rem]">
-                <div className={styles.display}>
-                    <div className="float-left w-[55%]">
-                        <div className={styles.text1}>
-                            <h1 className={styles.text}>CONTACT ME</h1>
+            <div className="m-[2rem] md:m-[5rem]">
+                <div className="md:w-[13ovh] md:ml-auto md:mr-auto">
+                    <div className="md:float-left md:w-[55%]">
+                        <div className={`${styles.text1} text-xs md:text-sm`}>
+                            <h1 className={`${styles.text} text-base md:text-2xl`}>CONTACT ME</h1>
                             <p className="mb-2">
                                 For a more detailed discussion and to receive your quotation, kindly message me with a
                                 brief
@@ -45,9 +44,11 @@ function Contact() {
                             </p>
                         </div>
                     </div>
-                    <img alt="" className="float-right w-[35%] h-auto" src={image_meo}/>
+                    <img alt="" className="md:float-right md:w-[35%] h-auto" src={image_meo}/>
                 </div>
             </div>
+
+            {/*<MobileIndex/>*/}
 
         </div>
     )
