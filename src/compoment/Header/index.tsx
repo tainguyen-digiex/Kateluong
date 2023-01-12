@@ -3,9 +3,14 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 function Header() {
+
+
     return (
         <div className='text-white flex flex-col justify-center items-center pt-5 m-5'>
-            <h1 className={`${styles.text} text-xl md:text-5xl z-[9999]`}>
+            <div className="text-dark dark:text-white">
+
+            </div>
+            <h1 className={`${styles.text} text-xl md:text-5xl`}>
                 My name's...
             </h1>
             <div className="hidden md:block">

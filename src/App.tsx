@@ -13,7 +13,8 @@ function App() {
     return (
         <BrowserRouter>
             <div
-                className={!open ? 'color w-full h-screen overflow-y-auto fixed' : 'bg-[#000000CC] w-full h-screen overflow-y-auto fixed'}>
+                className={!open ? 'color dark:bg-black w-full h-screen overflow-y-auto fixed'
+                    : 'bg-[#000000CC] dark:bg-black w-full h-screen overflow-y-auto fixed'}>
                 <MenuBar setOpen={() => setOpen(!open)} open={open}/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
