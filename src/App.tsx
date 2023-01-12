@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Footer from "./compoment/Footer";
 import Contact from "./page/Contact";
 import MenuBar from "./compoment/Menu";
+import Resume from "./page/Resume";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/resume" element={<Resume/>}/>
                 </Routes>
                 <Footer/>
             </div>

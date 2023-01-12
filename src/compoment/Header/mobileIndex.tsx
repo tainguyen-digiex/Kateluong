@@ -37,17 +37,9 @@ function MobileIndex(props: Props) {
                       className={`${styles.text2} text-xs md:text-sm w-[120px] flex justify-center items-center mb-2`}>
                     ABOUT ME
                 </Link>
-                <Link to="/"
+                <Link to="/resume"
                       className={`${styles.text2} text-xs md:text-sm w-[120px] flex justify-center items-center mb-2`}>
                     RESUME
-                </Link>
-                <Link to="/"
-                      className={`${styles.text2} text-xs md:text-sm w-[120px] flex justify-center items-center mb-2`}>
-                    ILLUSTRATION
-                </Link>
-                <Link to="/"
-                      className={`${styles.text2} text-xs md:text-sm w-[120px] flex justify-center items-center mb-2`}>
-                    2D DESIGN
                 </Link>
                 <Link to="/contact"
                       className={`${styles.text2} text-xs md:text-sm w-[120px] flex justify-center items-center mb-2`}>

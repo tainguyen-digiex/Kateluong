@@ -11,7 +11,7 @@ function MenuBar(props: Props) {
     const {setOpen, open} = props
 
     return (
-        <div className='flex justify-start items-start pt-5 m-5 max-h-[50px] text-white'>
+        <div className='flex justify-start items-start pt-2 m-5 max-h-[50px] text-white'>
             <div className="md:hidden" onClick={() => setOpen(!open)}>
                 {open ? <Close className="w-10 h-10"/>
                     : <Menu className="w-10 h-10"/>}

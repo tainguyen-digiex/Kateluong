@@ -1,0 +1,61 @@
+.text {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: 0;
+    font-weight: normal;
+}
+
+.image {
+    height: 170px;
+    width: 170px;
+    background-size: cover;
+    background-position: center center;
+    margin: auto auto 15px;
+    border-radius: 100%;
+}
+
+.work {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+}
+
+.content {
+    max-width: 500px;
+    margin: 30px auto 60px;
+}
+
+.textContent {
+    font-size: 13px;
+    color: rgb(232, 232, 232);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+}
+
+/*float-left border-r-2 border-r-gray w-[30%] pr-2*/
+.contacts {
+    float: left;
+    border-color: rgba(232, 232, 232, 0.1);
+    padding-right: 5%;
+    border-right: 1px solid;
+    width: 30%;
+}
+
+.textContent1 {
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.borderText {
+    border-color: rgba(232, 232, 232, 0.1);
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
+    margin: 10px 0px;
+}
