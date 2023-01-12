@@ -1,22 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Home from "./page/Home";
-import {BrowserRouter, Outlet, Route, Routes, useNavigate} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Footer from "./compoment/Footer";
 import Contact from "./page/Contact";
-import Header from "./compoment/Header";
+import MenuBar from "./compoment/Menu";
+
 
 function App() {
+    const [open, setOpen] = useState(false)
+
     return (
         <BrowserRouter>
-            <div className="color w-full h-screen overflow-y-auto fixed">
+            <div
+                className={!open ? 'color w-full h-screen overflow-y-auto fixed' : 'bg-[#000000CC] w-full h-screen overflow-y-auto fixed'}>
+                <MenuBar setOpen={() => setOpen(!open)} open={open}/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
                 <Footer/>
             </div>
-
         </BrowserRouter>
 
     );

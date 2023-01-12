@@ -2,12 +2,15 @@ import Header from "../../compoment/Header";
 import styles from "../Contact/styles.module.css"
 import image_meo from "../../assets/image/meo.png"
 
+
+
 function Contact() {
+
     return (
         <div className="animate__animated animate__fadeInDown overflow-x-hidden h-auto">
             <Header/>
-            <div className="m-[2rem] md:m-[5rem]">
-                <div className="md:w-[13ovh] md:ml-auto md:mr-auto">
+            <div className="m-[3rem] md:m-[5rem]">
+                <div className="md:w-[130vh] md:ml-auto md:mr-auto">
                     <div className="md:float-left md:w-[55%]">
                         <div className={`${styles.text1} text-xs md:text-sm`}>
                             <h1 className={`${styles.text} text-base md:text-2xl`}>CONTACT ME</h1>
@@ -44,12 +47,9 @@ function Contact() {
                             </p>
                         </div>
                     </div>
-                    <img alt="" className="md:float-right md:w-[35%] h-auto" src={image_meo}/>
+                    <img alt="" className="md:float-right md:w-[35%] md:h-auto" src={image_meo}/>
                 </div>
             </div>
-
-            {/*<MobileIndex/>*/}
-
         </div>
     )
 }
