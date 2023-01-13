@@ -1,6 +1,6 @@
 import Header from "../../compoment/Header";
 import styles from "../Contact/styles.module.css"
-import image_meo from "../../assets/image/meo.png"
+import image_meo from "../../assets/image/kate_2.jpg"
 import {useState} from "react";
 
 
@@ -12,7 +12,9 @@ function Contact() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="animate__animated animate__fadeInDown overflow-x-hidden h-auto">
+        <form
+            onSubmit={handleSubmit}
+            className="animate__animated animate__fadeInDown overflow-x-hidden h-auto">
             <Header/>
             <div className="m-[3rem] md:m-[5rem]">
                 <div className="md:w-[130vh] md:ml-auto md:mr-auto">
@@ -66,7 +68,7 @@ function Contact() {
                             </label>
                             <input
                                 id="name"
-                                className={`${styles.input} ${styles.border} focus:outline-none`}
+                                className={`${styles.input} focus:outline-none`}
                                 required={true}
                             />
                         </div>
@@ -78,7 +80,7 @@ function Contact() {
                             </label>
                             <input
                                 id="name"
-                                className={`${styles.input} ${styles.border} focus:outline-none`}
+                                className={`${styles.input} focus:outline-none`}
                                 required={true}
                             />
                         </div>
@@ -92,8 +94,8 @@ function Contact() {
                                 id="messenger"
                                 onClick={() => setOpen(true)}
                                 className={
-                                    !open ? `${styles.input} ${styles.border} focus:outline-none`
-                                        : `${styles.input2} ${styles.border} animate__animated animate__fadeInDown focus:outline-none`}
+                                    !open ? `${styles.inputTextarea} focus:outline-none`
+                                        : `${styles.inputTextarea2} focus:outline-none`}
                                 required={true}
                             />
                         </div>
@@ -103,7 +105,6 @@ function Contact() {
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </form>

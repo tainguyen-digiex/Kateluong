@@ -30,13 +30,13 @@
     display: block;
 }
 
-.forInput{
+.forInput {
     position: absolute;
     bottom: 12px;
     padding-top: 0;
 }
 
-.input {
+input.input {
     font-size: 13px;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,8 +51,28 @@
     opacity: .7;
     height: 20px;
     line-height: 170%;
+    box-shadow: none;
 }
-.input2 {
+
+textarea.inputTextarea {
+    font-size: 13px;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    background: 0 0;
+    border-radius: 0;
+    padding: 10px 0;
+    opacity: .7;
+    height: 20px;
+    line-height: 170%;
+    box-shadow: none;
+}
+
+textarea.inputTextarea2 {
     font-size: 13px;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -67,4 +87,9 @@
     opacity: .7;
     height: 100px;
     line-height: 170%;
+    box-shadow: none;
 }
+textarea:focus-visible{
+    outline-offset: 0px;
+}
+

@@ -38,11 +38,9 @@
 
 /*float-left border-r-2 border-r-gray w-[30%] pr-2*/
 .contacts {
-    float: left;
-    border-color: rgba(232, 232, 232, 0.1);
+    border-color: gray;
     padding-right: 5%;
     border-right: 1px solid;
-    width: 30%;
 }
 
 .textContent1 {
@@ -54,8 +52,32 @@
 }
 
 .borderText {
-    border-color: rgba(232, 232, 232, 0.1);
     border-bottom: 1px solid;
     padding-bottom: 7px;
     margin: 10px 0px;
+}
+
+.textContent2 {
+    font-size: 13px;
+    color: rgb(232, 232, 232);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+}
+
+.english {
+    height: 10px;
+    width: 40%;
+    overflow: hidden;
+    max-height: 10px;
+}
+
+.test {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
 }
