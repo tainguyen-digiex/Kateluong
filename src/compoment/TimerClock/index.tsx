@@ -7,12 +7,34 @@ interface Props {
 }
 
 function TimerClock(props: Props) {
+
     const {className} = props
 
     const date = new Date()
     const hours = date.getHours()
     const minutes = date.getMinutes()
     const seconds = date.getSeconds()
+    const MONTH_NAMES = [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun',
+        'Jul',
+        'Aug',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dec',
+    ]
+    const prefixZero = (time: number) => (time < 10 ? '0' + time : time)
+
+    const newDate = new Date(date)
+    const day = newDate.getDay()
+    const month = newDate.getMonth()
+    const year = newDate.getFullYear()
+
     const [count, setSeconds] = useState(0);
 
     useEffect(() => {
@@ -22,12 +44,14 @@ function TimerClock(props: Props) {
         return () => clearInterval(interval);
     }, []);
 
+
     return (
         <div className={className}>
             <div className={styles.countdownItem}>
-                {hours}:{' '}
-                {minutes}:{' '}
-                {seconds}
+                {prefixZero(day)}/ {MONTH_NAMES[month]}/ {year} {' '}
+                {prefixZero(hours) }:{' '}
+                {prefixZero(minutes)}:{' '}
+                {prefixZero(seconds)}
 
             </div>
         </div>
