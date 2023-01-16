@@ -28,7 +28,12 @@ function TimerClock(props: Props) {
         'Nov',
         'Dec',
     ]
-    const prefixZero = (time: number) => (time < 10 ? '0' + time : time)
+
+    function prefixZero(time: number) {
+        if (!time && typeof time !== "number") return;
+        if (time < 0) return '59'
+        return time < 10 ? '0' + time : time;
+    }
 
     const newDate = new Date(date)
     const day = newDate.getDay()
@@ -49,7 +54,7 @@ function TimerClock(props: Props) {
         <div className={className}>
             <div className={styles.countdownItem}>
                 {prefixZero(day)}/ {MONTH_NAMES[month]}/ {year} {' '}
-                {prefixZero(hours) }:{' '}
+                {prefixZero(hours)}:{' '}
                 {prefixZero(minutes)}:{' '}
                 {prefixZero(seconds)}
 
